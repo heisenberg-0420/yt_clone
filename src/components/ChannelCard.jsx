@@ -4,13 +4,13 @@ import { CheckCircle } from '@mui/icons-material';
 import { demoProfilePicture } from '../utils/constants';
 
 const ChannelCard = ({channelDetail, marginTop}) => (
-  <Box 
+  <Box
     sx={{ boxShadow: 'none',
           borderRadius: '20px',
           display: 'flex',
           justifyContent: 'center', 
           alignItems: 'center',
-          width: {xs: '356px', md: '320px',},
+          width: {xs: '356px', md: '320px'},
           height: '326px',
           margin: 'auto',
           marginTop
@@ -18,7 +18,7 @@ const ChannelCard = ({channelDetail, marginTop}) => (
   >
     <Link to={`/channel/${channelDetail?.id?.channelId}`}>
       <CardContent sx={{display: 'flex', flexDirection: "column", justifyContent: 'center', textAlign: "center", color: "#fff"}}>
-        <CardMedia 
+        <CardMedia
           image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture} 
           alt={channelDetail?.snippet?.title}
           sx={{borderRadius: '50%', height: '180px', width: '180px'}}
